@@ -11,6 +11,7 @@ public class ZeroAppPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
+
     @FindBy(id="signin_button")
     public WebElement ilkSignInButonu;
 
