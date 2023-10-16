@@ -3,6 +3,7 @@ package tests.day17_testNGframeworkveAssertion;
 import org.testng.annotations.Test;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ResuableMethods;
 
 public class C03_DriverSingletonPattern {
     @Test
@@ -26,7 +27,9 @@ public class C03_DriverSingletonPattern {
         ReusableMethods.bekle(3);
         driver.closeDriver();
         */
+
     }
 }
+
 
 
