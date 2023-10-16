@@ -13,12 +13,15 @@ public class QualitydemyPage {
     public WebElement emailKutusu;
     @FindBy(id = "login-password")
     public WebElement passwordKutusu;
+
     @FindBy(xpath = "//button[text()='Login']")
     public WebElement loginButonu;
 
       @FindBy(xpath="//a[normalize-space()='Accept']")
       public WebElement cooki ;
+
     @FindBy(linkText = "My courses")
     public WebElement basariliGirisElementi;
+
 
 }
