@@ -6,7 +6,7 @@ import java.util.Properties;
 public class ConfigReader {
     static Properties properties;
     static {
-        String dosyaYolu= "C:\\Users\\ASUS-PC\\Team120_testNG_fall2023\\src\\configuration.properties";
+        String dosyaYolu= "src/configuration.properties";
         try {
             FileInputStream fis= new FileInputStream(dosyaYolu);
             properties= new Properties();

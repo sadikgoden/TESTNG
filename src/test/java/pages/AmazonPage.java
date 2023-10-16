@@ -26,4 +26,6 @@ public class AmazonPage {
 
     @FindBy(xpath = "//span[@class='a-size-large product-title-word-break']")
     public WebElement ilkUrunIsimElementi;
+    @FindBy(id="sp-cc-accept")
+    public  WebElement amazoncookie;
 }
