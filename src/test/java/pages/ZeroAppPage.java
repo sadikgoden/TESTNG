@@ -12,8 +12,8 @@ public class ZeroAppPage {
     }
 
 
-    @FindBy(id="signin_button")
-    public WebElement ilkSignInButonu;
+    @FindBy(xpath = "//button[@id='signin_button']")
+    public WebElement ilkSignInButonu ;
 
     @FindBy(id="user_login")
     public WebElement loginKutusu;
