@@ -35,17 +35,6 @@ public class C01_RaporluTest extends TestBaseRapor {
         String actualSonucYazisi = amazonPage.sonucYaziElementi.getText();
         Assert.assertTrue(actualSonucYazisi.contains(expectedSonucIcerik));
         extentTest.pass("Amazon arama sonuclarinin aranan kelimeyi icerdigini test eder");
-
-
-    }}
-/*
-
-
-
-
-
-
-
         // ilk urune tiklayalim
 
         amazonPage.ilkUrunElementi.click();
@@ -62,6 +51,6 @@ public class C01_RaporluTest extends TestBaseRapor {
 
         Driver.closeDriver();
         extentTest.info("sayfayi kapatir");
-    }
-}
- */
+
+
+    }}

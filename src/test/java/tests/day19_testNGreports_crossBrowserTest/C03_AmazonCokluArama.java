@@ -1,18 +1,27 @@
 package tests.day19_testNGreports_crossBrowserTest;
 
+import org.openqa.selenium.Keys;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import pages.AmazonPage;
+import utilities.ConfigReader;
+import utilities.Driver;
+import utilities.ResuableMethods;
+
 public class C03_AmazonCokluArama {
-}
-/*
     @Test
-    public void amazonTopluArama(){
+    public void amazonTopluArama() {
+
 
         // amazon anasayfaya gidin
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
+
         // verilen listedeki her bir urun icin arama yaptirin
         // her urun icin bulunan sonuc sayisinin 1000'den fazla oldugunu test edin
 
         String[] aranacakUrunler = {"Nutella","Java","Armut","elma","Erik","Malatya"};
         AmazonPage amazonPage = new AmazonPage();
+       // amazonPage.amazoncookie.click();
         String aramaSonucu;
         String[] aramaSonucKelimeleri;
         String aramasonucSayisiStr;
@@ -37,8 +46,5 @@ public class C03_AmazonCokluArama {
 
             Assert.assertTrue(aramaSonucSayisiInt>100);
         }
-
-
-    }
-}
- */
+        Driver.closeDriver();
+    }}

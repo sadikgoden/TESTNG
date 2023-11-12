@@ -1,18 +1,18 @@
 package tests.day16_testNG_framework;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.QualitydemyPage;
+import pages.qualitydemyPage;
 import utilities.Driver;
 import utilities.ResuableMethods;
 
 public class C05_QualitydemyNegatifLoginTesti {
-    QualitydemyPage qualitydemyPage;
+    pages.qualitydemyPage qualitydemyPage;
     @Test
     public void gecersizPasswordTest(){
 
         Driver.getDriver().get("https://www.qualitydemy.com/ ");
        // Driver.getDriver().get("https://www.qualitydemy.com/");
-        qualitydemyPage= new QualitydemyPage();
+        qualitydemyPage= new qualitydemyPage();
         qualitydemyPage.ilkLoginLinki.click();
         qualitydemyPage.emailKutusu.sendKeys("anevzatcelik@gmail.com");
         qualitydemyPage.passwordKutusu.sendKeys("12345");
@@ -28,7 +28,7 @@ public class C05_QualitydemyNegatifLoginTesti {
                 Driver.getDriver().get("https://www.qualitydemy.com/ ");
               //  Driver.getDriver().get("https://www.qualitydemy.com/");
 
-                qualitydemyPage= new QualitydemyPage();
+                qualitydemyPage= new qualitydemyPage();
                 qualitydemyPage.ilkLoginLinki.click();
                 qualitydemyPage.emailKutusu.sendKeys("alican@gmail.com");
                 qualitydemyPage.passwordKutusu.sendKeys("Nevzat152032");
@@ -41,7 +41,7 @@ public class C05_QualitydemyNegatifLoginTesti {
             @Test
             public void gecersizEmailPasswordTesti(){
                 Driver.getDriver().get("https://www.qualitydemy.com/ ");
-                qualitydemyPage= new QualitydemyPage();
+                qualitydemyPage= new qualitydemyPage();
                 qualitydemyPage.ilkLoginLinki.click();
                 qualitydemyPage.emailKutusu.sendKeys("alican@gmail.com");
                 qualitydemyPage.passwordKutusu.sendKeys("12345");

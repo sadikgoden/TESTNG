@@ -28,4 +28,6 @@ public class AmazonPage {
     public WebElement ilkUrunIsimElementi;
     @FindBy(id="sp-cc-accept")
     public  WebElement amazoncookie;
+
+
 }

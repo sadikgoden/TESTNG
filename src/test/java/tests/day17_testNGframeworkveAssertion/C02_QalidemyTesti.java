@@ -2,7 +2,7 @@ package tests.day17_testNGframeworkveAssertion;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.QualitydemyPage;
+import pages.qualitydemyPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ResuableMethods;
@@ -16,7 +16,7 @@ public class C02_QalidemyTesti {
         Driver.getDriver().get(ConfigReader.getProperty("qdUrl"));
 
        //2- login linkine basin
-      QualitydemyPage qualitydemyPage = new QualitydemyPage();
+      qualitydemyPage qualitydemyPage = new qualitydemyPage();
       qualitydemyPage.cooki.click();
         ResuableMethods.bekle(2);
         qualitydemyPage.ilkLoginLinki.click();

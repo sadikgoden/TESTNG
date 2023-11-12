@@ -2,7 +2,7 @@ package tests.day16_testNG_framework;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.QualitydemyPage;
+import pages.qualitydemyPage;
 import utilities.Driver;
 public class C04_QualitydemyPozitifLogin {
     @Test
@@ -10,7 +10,7 @@ public class C04_QualitydemyPozitifLogin {
         //1- https://www.qualitydemy.com/ anasayfasina gidin
         Driver.getDriver().get("https://www.qualitydemy.com/");
         //2- login linkine basin
-        QualitydemyPage qualitydemyPage = new QualitydemyPage();
+        qualitydemyPage qualitydemyPage = new qualitydemyPage();
         qualitydemyPage.cooki.click();
         qualitydemyPage.ilkLoginLinki.click();
         //3- Kullanici email'i olarak valid email girin
