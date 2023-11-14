@@ -1,9 +1,16 @@
 package tests.day19_testNGreports_crossBrowserTest;
 
+import com.github.javafaker.Faker;
+import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+import pages.qualitydemyPage;
+import utilities.ConfigReader;
+import utilities.Driver;import com.github.javafaker.Faker;
+
+
 public class C05_QualitydemyCokluNegatifLoginTesti {
-}
-/*
-  @DataProvider
+    @DataProvider
     public static Object[][] gecersizKullaniciListesi() {
 
         String[][] gecersizKullaniciBilgileri = new String[10][2];
@@ -25,7 +32,8 @@ public class C05_QualitydemyCokluNegatifLoginTesti {
         Driver.getDriver().get(ConfigReader.getProperty("qdUrl"));
 
         // ilk login linkine tiklayin
-        QualitydemyPage qualitydemyPage = new QualitydemyPage();
+        qualitydemyPage qualitydemyPage = new qualitydemyPage();
+        qualitydemyPage.cooki.click();
         qualitydemyPage.ilkLoginLinki.click();
 
         // verilen gecersiz kullanici adi ve sifreleri listesindeki
@@ -41,4 +49,3 @@ public class C05_QualitydemyCokluNegatifLoginTesti {
         Driver.closeDriver();
     }
 }
- */

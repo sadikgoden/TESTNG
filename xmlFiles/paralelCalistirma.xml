@@ -19,14 +19,14 @@ verbose ==> konsolda yazdirilan ayrinti miktarini kontrol eder
 <suite name="paralel calistirma" thread-count="2" parallel="tests" verbose="1">
 
     <test name="browser1">
-        <packages>
-            <package name="tests.day16_testNG_framework"></package>
-        </packages>
+      <classes>
+          <class name="tests.day20_clasikUsulleCalisacakTestler.C03_BasicAuthentication"></class>
+      </classes>
     </test>
 
     <test name="browser2">
-        <packages>
-            <package name="tests.day17_testNGFramework_assertions"></package>
-        </packages>
+        <classes>
+            <class name="tests.day20_clasikUsulleCalisacakTestler.C02_AlertsTesti"></class>
+        </classes>
     </test>
 </suite>

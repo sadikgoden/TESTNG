@@ -18,7 +18,7 @@ istedigimiz kadar kırılım yapabiliriz
                     <include name="gecersizEmailTesti"></include>
                 </methods>
             </class>
-            <class name="tests.day15_testNG_framework.C01_Priority">
+            <class name="tests.Day15_testNG_framework.C01_priority">
                 <methods>
                     <exclude name="carpmaTesti"></exclude>
                 </methods>
